@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@font-face {
+    font-family: "Ralph";
+    src: url("./img/Amatemora.otf");
+}
 
 *{
     margin: 0;
@@ -16,12 +19,12 @@
     position: fixed;
     width: 100%;
     padding: 5px 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ralph', sans-serif;
     z-index: 999;
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    background: #66306b;
+    background: #922444;
     padding: .9375em 0;
 }
 .navbar .max-width{
@@ -30,17 +33,22 @@
     justify-content: space-between;
 }
 .navbar .logo a{
-    color: #ffffff;
+    color: #f2f2f2;
     font-size: 2.1875em;
     font-weight: 500;
+    text-shadow: 2px 2px 3px #0000006e;
 }
 .navbar .logo a span{
-    color: #66306b;
+    color: #922444;
     transition: color 0.3s ease;
     font-weight: 800;
+    text-shadow: none;
 }
 .navbar.sticky .logo a span{
-    color: #ffffff;
+    color: #f2f2f2;
+    font-weight: 500;
+    text-shadow: none;
+    text-shadow: 2px 2px 3px #0000006e;
 }
 .navbar .menu li{
     list-style: none;
@@ -50,149 +58,73 @@
     left: 0;
 }
 .navbar .menu li a{
-    color: #ffffff;
-    font-size: 35px;
+    color: #922444;
+    font-size: 30px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: #66306b;
+    color: #922444;
     font-weight: 600;
     transition: color 0.3s ease;
 }
+.navbar.sticky .menu li a{
+    color: #f2f2f2;
+}
 .navbar.sticky .menu li a:hover{
-    color: #bbb9b9;
+    color: #f5f5f5;
 }
-/* Language - Linguagem */
-/* .language {
-    position: relative;
-    width: 7.5em;
-    margin-left: 2.5em;
-    font-weight: bold;
-}
-.language-selected {
-    display: flex;   
-    align-items: center;
-    color: #fff;
-    cursor: pointer;
-}
-.language-selected:before {
-    content: '';
-    display: inline-block;
-    width: 1.875em;
-    height: 1.875em;
-    background-image: url(https://www.countryflags.io/br/flat/32.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 0.625em;
-}
-
-.language-selected.change-br:before {
-    background-image: url(https://www.countryflags.io/br/flat/32.png);
-}
-.language-selected.change-en:before {
-    background-image: url(https://www.countryflags.io/us/flat/32.png);
-}
-.language-selected.change-es:before {
-    background-image: url(https://www.countryflags.io/es/flat/32.png);
-}
-
-.language ul {
-    position: absolute;
-    width: 8.75em;
-    background-color: #111;
-    border: 1px solid #111;
-    padding-top: 0.625em;
-    box-shadow: 0em 0.0625em 0.625em rgba(0, 0, 0, 0.5);
-    display: none;
-}
-
-.language ul li {
-    list-style: none;
-}
-
-.language ul li a {
-    display: block;
-    color: #fff;
-    padding: 0.3125em 0.625em;
-}
-
-.language ul li:hover {
-    background-color: #66306b;
-}
-
-.language ul li a:before {
-    content: '';
-    display: inline-block;
-    width: 1.5625em;
-    height: 1.5625em;
-    background-size: contain;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-right: 0.625em;
-}
-
-a.br:before {
-    background-image: url(https://www.worldometers.info/img/flags/br-flag.gif);
-}
-
-a.en:before {
-    background-image: url(https://www.worldometers.info/img/flags/us-flag.gif);
-}
-a.es:before {
-    background-image: url(https://www.worldometers.info/img/flags/sp-flag.gif);
-}
-
-.language:hover ul {
-    display: block;
-} */
-
 /* Home Inicio */
 .home{
     display: flex;
     background: url(img/header.png) no-repeat center;
     height: 100vh;
-    color: #ffffff;
+    color: #f2f2f2;
     min-height: 31.25em;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ralph', sans-serif;
+    background-attachment: fixed;
 }
 .home .max-width{
     margin: auto 0 auto 2.5em;
 }
 .home .home-content .text1{
-    font-size: 1.6875em;
+    font-size: 50px;
+    text-shadow: 2px 2px 3px #0000006e;
 }
 .home .home-content .text2{
-    font-size: 4.6875em;
-    font-weight: 500;
+    font-size: 100px;
+    font-weight: 600;
     margin-left: -0.1875em;
+    color: #922444;
 }
 .home .home-content .text3{
-    font-size: 2.5em;
-    margin: 0.3125em 0;
+    font-size: 50px;
+    margin: 8px 0;
+    text-shadow: 2px 2px 3px #0000006e;
 }
 .home .home-content .text3 span{
-    color: #66306b;
+    color: #922444;
     font-weight: 800;
+    text-shadow: none;
 }
 .home .home-content a{
     display: inline-block;
-    background: #66306b;
-    color: #ffffff;
-    font-size: 1.5625em;
-    padding: 0.75em 2.25em;
+    background: #922444;
+    color: #f2f2f2;
+    font-size: 30px;
+    padding: 16px 30px;
     margin-top: 1.25em;
     border-radius: 0.375em;
-    border: 0.125em solid #66306b;
+    border: 0.125em solid #922444;
 }
 .home .home-content a:hover{
-    color: #66306b;
+    color: #922444;
     background: none;
 }
 /* Menu Mobile */
 .menu-btn{
-    color: #ffffff;
+    color: #f2f2f2;
     font-size: 1.4375em;
     cursor: pointer;
     display: none;
@@ -203,14 +135,15 @@ section{
     padding: 100px 0;
 }
 section .title{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ralph', sans-serif;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 800;
-    color: #111;
+    color: #fab3a0;
     margin-bottom: 60px;
     padding-bottom: 20px;
     position: relative;
+    text-shadow: 2px 2px 3px #0000006e;
 }
 section .title::before{
     content: "";
@@ -219,25 +152,27 @@ section .title::before{
     left: 50%;
     width: 200px;
     height: 3px;
-    background-color: #111;
+    background-color: #fab3a0;
     transform: translateX(-50%);
+    
 }
 section .title::after{
     position: absolute;
-    bottom: -12px;
+    bottom: -20px;
     left: 50%;
-    font-size: 20px;
-    color: #66306b;
-    background: #ffffff;
+    font-size: 30px;
+    color: #922444;
+    background: #f2f2f2;
     padding:5px;
     transform: translateX(-50%);
+    text-shadow: none;
 }
 .about,
 .services,
 .skills,
 .projects,
 .contact{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ralph', sans-serif;
 }
 .about .about-content, 
 .services .services-content,
@@ -253,6 +188,9 @@ section .title::after{
 .about .title::after{
     content: "Quem sou eu";
 }
+.about #clinica::after{
+    content: "Natana Crespo";
+}
 .about .about-content .left{
     width: 45%;
 }
@@ -263,39 +201,51 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 10px;
+    font-family: 'Ubuntu';
 }
 .about .about-content .right .text span{
-    color: #66306b;
+    color: #922444;
 }
 .about .about-content .right p{
+    font-family: 'Ubuntu';
     text-align: justify;
 }
 .about .about-content .right a{
     display: inline-block;
-    background: #66306b;
+    background: #922444;
     color: #fff;
-    font-size:20px;
+    font-size:30px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid #66306b;
+    border: 2px solid #922444;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: #66306b;
+    color: #922444;
     background: none;
 }
 .about .about-content .left img{
     width: 400px;
-    height: 400px;
+    height: 600px;
     object-fit: cover;
+    padding: 5px;
     border-radius: 6px;
+    border: 1px dashed #fab3a0;
+}
+.about .about-content .left img.clinica{
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px dashed #fab3a0;
 }
 
 /* Sessão: "Serviços" - Section: "Services */
 .services, .projects{
-    background: #111;
+    background: #fab3a0;
     color: #fff;
 }
 .services h2,
@@ -308,13 +258,13 @@ section .title::after{
     background: #fff;
 }
 .services .title::after{
-    background: #111;
+    background: #fab3a0;
     font-weight: 600;
     content: "Que ofereço";
 }
 .services .services-content .card{
     width: calc(33% - 10%);
-    background: #222;
+    background: #922444;
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
@@ -322,7 +272,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .services .services-content .card:hover{
-    background: #66306b;
+    background: #511325;
 }
 .services .services-content .card .box{
     transition: all 0.3s ease;
@@ -330,103 +280,42 @@ section .title::after{
 .services .services-content .card:hover .box{
     transform: scale(1.05);
 }
-.services .services-content .card ion-icon{
+.services .services-content .card ion-icon,
+.services .services-content .card i{
     font-size: 50px;
-    color: #66306b;
+    color: #fab3a0;
     transition: all 0.3s ease;
 }
-.services .services-content .card:hover ion-icon{
+.services .services-content .card:hover ion-icon,
+.services .services-content .card:hover i{
     color: #fff;
 }
 .services .services-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10 0 7px 0 ;
+    font-family: 'Ubuntu';
+    color: #fab3a0;
 }
-/* Sessão/Section: Especialidades/Specialties */
-.skills .title::after{
-    content: "O que eu sei";
+.services .services-content .card:hover .text{
+    color: white;
 }
-.skills .skills-content .column{
-    width: calc(50% - 30px);
+.services .services-content .card p{
+    font-family: 'Ubuntu';
+    color: #fab3a0;
 }
-.skills .skills-content .left .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-.skills .skills-content .left p{
-    text-align: justify;
-}
-.skills .skills-content .left a{
-    display: inline-block;
-    background: #66306b;
+.services .services-content .card:hover p{
     color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #66306b;
-    transition: all 0.3s ease;
-}
-.skills .skills-content .left a:hover{
-    color: #66306b;
-    background: none;
-}
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
-}
-.skills .skills-content .right .info{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.skills .skills-content .right span{
-    font-weight: 500;
-    font-size: 18px;
-}
-.skills .skills-content .right .line{
-    width: 100%;
-    height: 5px;
-    background: #ccc;
-    position: relative;
-}
-.skills .skills-content .right .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: #66306b;
-}
-.skills .skills-content .right .html::before{
-    width: 78%;
-}
-.skills .skills-content .right .css::before{
-    width: 82%;
-}
-.skills .skills-content .right .js::before{
-    width: 74%;
-}
-.skills .skills-content .right .react::before{
-    width: 45%;
-}
-.skills .skills-content .right .mysql::before{
-    width: 61%;
-}
-.skills .skills-content .right .ps::before{
-    width: 91%;
 }
 
 /* Sessão/Section: Projetos/Projects */
 
 .projects .title::after{
-    content: "Que desenvolvi";
-    background-color: #111;
+    content: "Que já desenvolvi";
+    background-color: #fab3a0;
 }
 .projects .carousel .card{
-    background: #222;
+    background: #922444;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -434,24 +323,25 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .projects .carousel .card:hover{
-    background: #66306b;
+    background: #511325;
 }
 .projects .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
     text-decoration: none;
+    font-family: 'Ubuntu';
 }
 .projects .carousel .card img{
-    width: 150px;
-    height: 150px;
+    height: 300px;
+    width: 300px;
     object-fit: cover;
-    border-radius: 90px;
-    border: 5px solid #66306b;
+    border-radius: 10px;
+    border: 5px solid #511325;
     transition: all 0.3s ease;
 }
 .projects .carousel .card:hover img{
-    border-color: #fff;
+    border-color: #922444;
 }
 .projects .carousel .card .box{
     display: flex;
@@ -460,21 +350,7 @@ section .title::after{
     justify-content: center;
     transition: all 0.3s ease;
 }
-.projects .carousel .card .box button{
-    font-size: 20px;
-    background: #66306b;
-    color: #fff;
-    font-size:20px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #222;
-    transition: all 0.3s ease;
-}
-.projects .carousel .card .box button:hover{
-    background: #2d162f;
-}
+
 .projects .carousel .card:hover .box{
     transform: scale(1.05);
 }
@@ -489,7 +365,7 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid #66306b!important;
+    border: 2px solid #922444!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -498,7 +374,7 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: #66306b!important;
+    background: #922444!important;
 }
 
 /* Section/Sessão: Contact/Contato */
@@ -511,13 +387,16 @@ section .title::after{
 .contact .contact-content .text{
     font-size: 20px;
     font-weight: 600;
+    font-family: 'Ubuntu';
     margin-bottom: 10px;
 }
-.row .info a{
+.row .info{
+    font-family: 'Ubuntu';
     text-decoration: none;
 }
 .contact .contact-content .left p{
     text-align: justify;
+    font-family: 'Ubuntu';
 }
 .contact .contact-content .left .icons{
     margin: 10px 0;
@@ -538,7 +417,7 @@ section .title::after{
 }
 .contact .contact-content .row ion-icon{
     font-size: 25px;
-    color: #66306b;
+    color: #922444;
 }
 .contact .contact-content .row .wpp{
     color: green;
@@ -562,7 +441,7 @@ section .title::after{
     outline: none;
     padding: 0 15px;
     font-size: 17px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu';
     transition: all 0.3s ease;
 }
 .contact .right form .field input:focus,
@@ -589,33 +468,34 @@ section .title::after{
     color: #fff;
     display: block;
     width: 160px!important;
+    font-family: 'ralph';
     height: 45px;
     outline: none;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 500;
     border-radius: 6px;
     cursor: pointer;
     flex-wrap: nowrap;
-    background: #66306b;
-    border: 2px solid #66306b;
+    background: #922444;
+    border: 2px solid #922444;
     transition: all 0.3s ease;
     margin-top: 30px;
 }
 .button-area button:hover{
-    color: #66306b;
+    color: #922444;
     background: none;
 }
 
 /* Section/Sessão: Footer */
 footer{
-    background: #111;
+    background: #fab3a0;
     padding: 15px 23px;
     color: #fff;
     text-align: center;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'ubuntu', sans-serif;
 }
 footer span a{
-    color: #66306b;
+    color: #922444;
     text-decoration: none;
     font-weight: 600;
 }
@@ -672,7 +552,7 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111;
+        background: #fab3a0;
         padding-top: 80px;
         text-align: center;
         transition: all 0.3s ease;
