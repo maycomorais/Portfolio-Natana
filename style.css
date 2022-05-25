@@ -143,7 +143,7 @@ section .title{
     margin-bottom: 60px;
     padding-bottom: 20px;
     position: relative;
-    text-shadow: 2px 2px 3px #0000006e;
+    /* text-shadow: 2px 2px 3px #0000006e; */
 }
 section .title::before{
     content: "";
@@ -247,6 +247,7 @@ section .title::after{
 .services, .projects{
     background: #fab3a0;
     color: #fff;
+    text-shadow: 2px 2px 3px #0000006e;
 }
 .services h2,
 .projects h2{
