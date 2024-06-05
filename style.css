@@ -1,658 +1,120 @@
 @font-face {
-    font-family: "Ralph";
-    src: url("./img/Amatemora.otf");
-}
-
-*{
+    font-family: "Now Bold";
+    src: url("./img/Now-Bold-BF6542f7138a8d2.otf");
+  }
+  
+  @font-face {
+    font-family: "Now Medium";
+    src: url("./img/Now-Medium-BF6542f7137648d.otf");
+  }
+  
+  @font-face {
+    font-family: "Now Light";
+    src: url("./img/Now-Light-BF6542f7137fce2.otf");
+  }
+  
+  @font-face {
+    font-family: "Quicksand";
+    src: url("./img/Quicksand-VariableFont_wght.ttf");
+  }
+    
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-}
-.max-width{
-    max-width: 91.25em;
-    padding: 0 5em;
-    margin: auto;
-}
-/*..navbar...início*/
-.navbar{
-    position: fixed;
-    width: 100%;
-    padding: 5px 0;
-    font-family: 'Ralph', sans-serif;
-    z-index: 999;
-    transition: all 0.3s ease;
-}
-.navbar.sticky{
-    background: #922444;
-    padding: .9375em 0;
-}
-.navbar .max-width{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.navbar .logo a{
-    color: #f2f2f2;
-    font-size: 2.1875em;
-    font-weight: 500;
-    text-shadow: 2px 2px 3px #0000006e;
-}
-.navbar .logo a span{
-    color: #922444;
-    transition: color 0.3s ease;
-    font-weight: 800;
-    text-shadow: none;
-}
-.navbar.sticky .logo a span{
-    color: #f2f2f2;
-    font-weight: 500;
-    text-shadow: none;
-    text-shadow: 2px 2px 3px #0000006e;
-}
-.navbar .menu li{
-    list-style: none;
-    display: inline-block;
-}
-.navbar.menu.active{
-    left: 0;
-}
-.navbar .menu li a{
-    color: #922444;
-    font-size: 30px;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: color 0.3s ease;
-}
-.navbar .menu li a:hover{
-    color: #922444;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-.navbar.sticky .menu li a{
-    color: #f2f2f2;
-}
-.navbar.sticky .menu li a:hover{
-    color: #f5f5f5;
-}
-/* Home Inicio */
-.home{
-    display: flex;
-    background: url(img/header.webp) no-repeat center;
-    height: 100vh;
-    color: #f2f2f2;
-    min-height: 31.25em;
-    font-family: 'Ralph', sans-serif;
-    background-attachment: fixed;
-}
-.home .max-width{
-    margin: auto 0 auto 2.5em;
-}
-.home .home-content .text1{
-    font-size: 50px;
-    text-shadow: 2px 2px 3px #0000006e;
-}
-.home .home-content .text2{
-    font-size: 100px;
-    font-weight: 600;
-    margin-left: -0.1875em;
-    color: #922444;
-}
-.home .home-content .text3{
-    font-size: 50px;
-    margin: 8px 0;
-    text-shadow: 2px 2px 3px #0000006e;
-}
-.home .home-content .text3 span{
-    color: #922444;
-    font-weight: 800;
-    text-shadow: none;
-}
-.home .home-content a{
-    display: inline-block;
-    background: #922444;
-    color: #f2f2f2;
-    font-size: 30px;
-    padding: 16px 30px;
-    margin-top: 1.25em;
-    border-radius: 0.375em;
-    border: 0.125em solid #922444;
-}
-.home .home-content a:hover{
-    color: #922444;
-    background: none;
-}
-/* Menu Mobile */
-.menu-btn{
-    color: #f2f2f2;
-    font-size: 1.4375em;
-    cursor: pointer;
-    display: none;
-}
-
-/* Todos so códigos similares - All similar codes */
-section{
-    padding: 100px 0;
-}
-section .title{
-    font-family: 'Ralph', sans-serif;
-    text-align: center;
-    font-size: 50px;
-    font-weight: 800;
-    color: #fab3a0;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    position: relative;
-    /* text-shadow: 2px 2px 3px #0000006e; */
-}
-section .title::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 200px;
-    height: 3px;
-    background-color: #fab3a0;
-    transform: translateX(-50%);
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
     
-}
-section .title::after{
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    font-size: 30px;
-    color: #922444;
-    background: #f2f2f2;
-    padding:5px;
-    transform: translateX(-50%);
-    text-shadow: none;
-}
-.about,
-.services,
-.skills,
-.projects,
-.contact{
-    font-family: 'Ralph', sans-serif;
-}
-.about .about-content, 
-.services .services-content,
-.skills .skills-content,
-.contact .contact-content{
+  }
+
+  .nav-logo {
+    width: 100vw;
+    height: 20vh;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
+    padding: 0 70px;
+    position: fixed;
+  }
 
-/* sessão: 'sobre' / section: 'about' */
-.about .title::after{
-    content: "Quem sou eu";
-}
-.about #clinica::after{
-    content: "Natana Crespo";
-}
-.about .about-content .left{
-    width: 45%;
-}
-.about .about-content .right{
-    width: 55%;
-}
-.about .about-content .right .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    font-family: 'Ubuntu';
-}
-.about .about-content .right .text span{
-    color: #922444;
-}
-.about .about-content .right p{
-    font-family: 'Ubuntu';
-    text-align: justify;
-}
-.about .about-content .right a{
-    display: inline-block;
-    background: #922444;
-    color: #fff;
-    font-size:30px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #922444;
-    transition: all 0.3s ease;
-}
-.about .about-content .right a:hover{
-    color: #922444;
-    background: none;
-}
-.about .about-content .left img{
-    width: 400px;
-    height: 600px;
-    object-fit: cover;
-    padding: 5px;
-    border-radius: 6px;
-    border: 1px dashed #fab3a0;
-}
-.about .about-content .left img.clinica{
-    width: 500px;
-    height: 350px;
-    object-fit: cover;
-    padding: 5px;
-    border-radius: 6px;
-    border: 1px dashed #fab3a0;
-}
+  .background {
+    height: 100vh;
+    width: 100vw;
+    background: url(img/dox-bg.webp);
+    background-size: cover;
+  }
 
-/* Sessão: "Serviços" - Section: "Services */
-.services, .projects{
-    background: #fab3a0;
-    color: #fff;
-    text-shadow: 2px 2px 3px #0000006e;
-}
-.services h2,
-.projects h2{
-    font-weight: 500;
-    color: #fff;
-}
-.services .title::before,
-.projects .title::before{
-    background: #fff;
-}
-.services .title::after{
-    background: #fab3a0;
-    font-weight: 600;
-    content: "Que ofereço";
-}
-.services .services-content .card{
-    width: calc(33% - 10%);
-    background: #922444;
-    text-align: center;
-    border-radius: 6px;
-    padding: 20px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.services .services-content .card:hover{
-    background: #511325;
-}
-.services .services-content .card .box{
-    transition: all 0.3s ease;
-}
-.services .services-content .card:hover .box{
-    transform: scale(1.05);
-}
-.services .services-content .card ion-icon,
-.services .services-content .card i{
-    font-size: 50px;
-    color: #fab3a0;
-    transition: all 0.3s ease;
-}
-.services .services-content .card:hover ion-icon,
-.services .services-content .card:hover i{
-    color: #fff;
-}
-.services .services-content .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10 0 7px 0 ;
-    font-family: 'Ubuntu';
-    color: #fab3a0;
-}
-.services .services-content .card:hover .text{
-    color: white;
-}
-.services .services-content .card p{
-    font-family: 'Ubuntu';
-    color: #fab3a0;
-}
-.services .services-content .card:hover p{
-    color: #fff;
-}
+  .max-width {
+    display: flex;
+    
+  }
 
-/* Sessão/Section: Projetos/Projects */
-
-.projects .title::after{
-    content: "Que já desenvolvi";
-    background-color: #fab3a0;
-}
-.projects .carousel .card{
-    background: #922444;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-.projects .carousel .card:hover{
-    background: #511325;
-}
-.projects .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-    text-decoration: none;
-    font-family: 'Ubuntu';
-}
-.projects .carousel .card img{
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 5px solid #511325;
-    transition: all 0.3s ease;
-}
-.projects .carousel .card:hover img{
-    border-color: #922444;
-}
-.projects .carousel .card .box{
+  .left-column {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 0 70px;
+    color: #18415D;
+  }
+
+  .left-column > h1 {
+    font-weight: normal;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .left-column > h2 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .left-column > a {
+    display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
-}
 
-.projects .carousel .card:hover .box{
-    transform: scale(1.05);
-}
-/* Dots under section Projects / Dots abaixo da sessão Projetos */
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid #922444!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: #922444!important;
-}
+    width: 200px;
+    height: 70px;
 
-/* Section/Sessão: Contact/Contato */
-.contact .title::after{
-    content: "Fale comigo";
-}
-.contact .contact-content .column{
-    width: calc(50% - 30px);
-}
-.contact .contact-content .text{
-    font-size: 20px;
-    font-weight: 600;
-    font-family: 'Ubuntu';
-    margin-bottom: 10px;
-}
-.row .info{
-    font-family: 'Ubuntu';
-    text-decoration: none;
-}
-.contact .contact-content .left p{
-    text-align: justify;
-    font-family: 'Ubuntu';
-}
-.contact .contact-content .left .icons{
-    margin: 10px 0;
-}
-.contact .contact-content .row{
-    display: flex;
-    height: 65px;
-    align-items: center;
-}
-.contact .contact-content .row .info{
-    margin-left: 30px;
-}
-.contact .contact-content .row .info .head{
-    font-weight: 500;
-}
-.contact .contact-content .row .info .sub-title{
-    color: #333;
-}
-.contact .contact-content .row ion-icon{
+    font-weight: bold;
     font-size: 25px;
-    color: #922444;
-}
-.contact .contact-content .row .wpp{
-    color: green;
-}
-.contact .right form .fields{
-    display: flex;
-}
-.contact .right form .fields .field,
-.contact .right form .field{
-    width: 100%;
-    height: 45px;
-    margin-bottom: 15px;
-}
+    background-color: #F7CC2F;
+    color: #18415D;
 
-.contact .right form .field input,
-.contact .right form .textarea textarea{
-    width: 100%;
-    height: 100%;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Ubuntu';
-    transition: all 0.3s ease;
-}
-.contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus{
-    border-color: #b3b3b3;
-}
-.contact .right form .name{
-    margin-right: 10px;
-}
-.contact .right form .textarea textarea{
-    padding-top: 10px;
-    resize: none;
-}
+    border: none;
+    border-radius: 50px;
+    margin-bottom: 20px;
 
-.contact .right form .textarea{
-    width: 100%;
-    height: 80px;
-}
-.button-area{
-    display: flex;
-    align-items: center;
-}
-.button-area button{
-    color: #fff;
-    display: block;
-    width: 160px!important;
-    font-family: 'ralph';
-    height: 45px;
-    outline: none;
-    font-size: 30px;
-    font-weight: 500;
-    border-radius: 6px;
     cursor: pointer;
-    flex-wrap: nowrap;
-    background: #922444;
-    border: 2px solid #922444;
+
     transition: all 0.3s ease;
-    margin-top: 30px;
-}
-.button-area button:hover{
-    color: #922444;
-    background: none;
-}
 
-/* Section/Sessão: Footer */
-footer{
-    background: #fab3a0;
-    padding: 15px 23px;
-    color: #fff;
-    text-align: center;
-    font-family: 'ubuntu', sans-serif;
-}
-footer span a{
-    color: #922444;
-    text-decoration: none;
-    font-weight: 600;
-}
-footer span a:hover{
-    text-decoration: underline;
-}
+  }
 
+  .left-column > a:hover {
+    background-color: #ffc800;
+    scale: 1.1;
+  }
 
-/* responsividade - responsiveness */
-@media (max-width: 1300px){
-    .navbar .max-width{
-        margin-left: 0;
-    }
-    .services .services-content .card{
-        width: calc(35% - 10%);
-        margin-bottom: 20px;
-    }
-    
-}
-@media (max-width: 1104px){
-    .about .about-content .left img{
-        width: 350px;
-        height: 350px;
-    }
-    .services .services-content .card{
-        width: calc(41% - 10%);
-        margin-bottom: 20px;
-    }
-}
-@media (max-width: 991px){
-    .navbar .max-width{
-        padding:0 50px;
-    }
-    .services .services-content .card{
-        width: calc(40% - 10%);
-        margin-bottom: 20px;
-    }
-}
-@media (max-width:947px){
-    .max-width{
-        max-width: 800px;
-        padding: 0 50px;
-    }
-    .menu-btn{
-        display: block;
-        z-index: 999;
-    }
-    #modal2{
-        transform: rotate(45deg);
-    }
-    .navbar .menu{
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        background: #fab3a0;
-        padding-top: 80px;
-        text-align: center;
-        transition: all 0.3s ease;
-    }
-    .navbar .menu.active{
-        left: 0;
-    }
-    .navbar .menu li{
-        display: block;
-    }
-    .navbar .menu li a{
-        display: inline-flex;
-        margin: 20px 0;
-        font-size: 25px;
-    }
-    .home .home-content .text2{
-        font-size: 70px;
-    }
-    .home .home-content .text3{
-        font-size: 35px;  
-    }
-    .about .about-content .column{
-        width: 50%;
-    }
-    .about .about-content .left{
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
-    }
-    .about .about-content .right{
-        flex: 100%;
-    }
-    .services .services-content .card{
-        width: calc(58.5% - 10%);
-        margin-bottom: 20px;
-    }
-    .skills .skills-content .column{
-        width: 100%;
-        margin-bottom: 35px;
-    }
-}
-@media (max-width:690px){
-    .home .home-content .text2{
-        font-size: 60px;
-    }
-    .home .home-content .text3{
-        font-size: 32px;
-    }
-    .home .home-content a{
-        font-size: 20px;
-        padding: 10px 30px;
-    }
-    .services .services-content .card{
-        width: 100%;
-    }
-    
-}
-@media (max-width:500px){
-    .home .home-content .text2{
-        font-size: 50px;
-    }
-    .home .home-content .text3{
-        font-size: 27px;
-    }
-    .services .services-content{
-        justify-content: center;
-        align-items: center;
-    }
-    .contact .fields{
-        width: 100%;
-        margin: 0;
-        flex-direction: column;
-    }
-    .contact .field{
-        width: 100%;
-        margin: 0;
-        flex-direction: column;
-    }
-    .contact .contact-content .column{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    } 
-}
-@media (max-width:400px){
-    .about .title::after{
-        font-size: 18px;
-    }
-    .services .title::after{
-        font-size: 18px;
-    }
-    .skills .title::after{
-        font-size: 18px;
-    }
-    .projects .title::after{
-        font-size: 16px;
-    }
-    .contact .title::after{
-        font-size: 18px;
-    }
-    
-}
+  .left-column > h3 {
+    font-weight: lighter;
+    font-size: 40px;
+  }
+
+  .rigth-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .rigth-column > h2 {
+    margin-top: 180px;
+    font-size: 40px;
+    color: #f2f2f2;
+    text-shadow: 2px 2px #18415D ;
+  }
