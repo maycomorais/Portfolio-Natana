@@ -295,7 +295,7 @@
 }
 
 .card1{
-  width: 300px;
+  width: 50%;
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
@@ -429,6 +429,11 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.text-d-container>a:hover{
+  transform: scale(1.1);
 }
 /* Diferencial 2 */
 
@@ -884,6 +889,8 @@
 
 
 /* CABEÇALHO */
+
+
 @media screen and (max-width: 768px) {
   .nav-logo {
       height: 5vh;
@@ -1065,10 +1072,31 @@
 
 /* SOLUÇÕES */
 
+@media screen and (max-width: 1080px){
+  .top-banner{
+    margin-bottom: 20px;
+  }
+  .right-solutions{
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .card1{
+    width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+
+  .card1>h5{
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .top-banner{
     height: 30px;
-    
   }
 
   .box-solutions{
@@ -1102,7 +1130,7 @@
     margin-right: 0;
   }
   .card1{
-    width: 100%;
+    width: 50%;
     height: auto;
     margin-bottom: 10px;
     margin-right: 0;
@@ -1248,6 +1276,18 @@
 
 /* DIFERENCIAL 2 */
 
+@media screen and (max-width: 1080px){
+  .diferencial-image-container{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .diferencial-image-container>img{
+    height: 500px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .diferencial2{
     flex-direction: column;
@@ -1281,10 +1321,13 @@
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .diferencial-image-container>img{
-    height: 400px;
+    height: 500px;
   }
   
 
@@ -1332,6 +1375,15 @@
 
 /* PRODUTOS */
 
+@media screen and (max-width: 1080px){
+  .cards{
+    width: 130px;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .products-header {
     margin-top: 20px;
@@ -1368,6 +1420,39 @@
 }
 
 /* DEPOIMENTOS */
+@media screen and (max-width: 1082px){
+
+  .testemonials{
+    height: auto;
+  }
+  .testemonial-card{
+    height: auto;
+  }
+
+  .testemonial-name>p>br{
+    display: none;
+  }
+
+  .testemonial-name>p{
+    margin: 0 10px;
+  }
+
+  .card-testemonial-container{
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+}
+
+@media screen and (max-width: 911px){
+  .card-testemonial-container{
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   
@@ -1490,7 +1575,7 @@
     height: 50px;
   }
 
-  .logo3>img{
+  .logo3>a>img{
     height: 30px;
   }
 
