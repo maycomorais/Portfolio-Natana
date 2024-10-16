@@ -802,20 +802,22 @@
   justify-content: center;
   width: 100vw;
   height: 250px;
-  margin-bottom: 20px;
 }
 
 .footer-logos{
   display: flex;
-  width: 70%;
-  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+  justify-content: space-around;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .logo1{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 100%;
 }
 .logo1>img{
   height: 100%;
@@ -824,19 +826,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
-}
-.logo2>img{
   height: 100%;
+}
+.logo2>a>img{
+  height: 50px;
 }
 .logo3{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
-}
-.logo3>img{
   height: 100%;
+}
+.logo3>a>img{
+  height: 50px;
 }
 
 .logo-social{
@@ -847,7 +849,7 @@
 }
 .wpp-logo{
   display: flex;
-  width: 165px;
+  width: auto;
   justify-content: space-between;
   align-items: center;
 }
